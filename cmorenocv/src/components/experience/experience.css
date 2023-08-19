@@ -1,0 +1,41 @@
+.experience {
+    margin: 15px;
+}
+
+.experience h2 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.experience .css-1ri6ub7-MuiPaper-root-MuiCard-root {
+    max-width: 100%;
+    margin-bottom: 10px;
+
+
+}
+.experience .css-et1ao3-MuiTypography-root{
+    font-weight: bold;
+}
+.experience .css-z2eky3-MuiTypography-root {
+    font-size: 14px;
+}
+
+.experience .MuiPaper-elevation {
+    min-height: 160px;
+}
+
+.experience .MuiCardContent-root {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.experience .MuiCardActions-root {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.experience .MuiCardHeader-root {
+    padding-bottom: 5px;
+}
+

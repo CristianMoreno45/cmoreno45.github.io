@@ -1,0 +1,13 @@
+.right-panel {
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.message {
+    font-style: italic;
+    text-align: right;
+}
+
+.statement {
+    text-align: center;
+}

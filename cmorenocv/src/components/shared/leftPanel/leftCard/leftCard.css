@@ -1,0 +1,17 @@
+.left-card {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.left-card h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: azure;
+}
+.left-card div {
+    color: azure;
+    text-align: left;
+}
+
+.left-card a {
+    color: azure;
+}

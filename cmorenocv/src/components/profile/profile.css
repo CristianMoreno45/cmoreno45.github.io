@@ -1,0 +1,28 @@
+.profile {
+    margin: 15px;
+}
+
+.profile h1 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.profile h2 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.profile h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.profile .MuiBox-root {
+    padding-bottom: 20px;
+}
+
+@media (min-width: 900px) {
+    .css-1xgjpwf-MuiGrid-root>.MuiGrid-item {
+        padding-top: 5px !important;
+    }
+}
