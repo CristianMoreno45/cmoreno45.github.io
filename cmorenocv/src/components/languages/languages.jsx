@@ -1,12 +1,18 @@
-
+import React from 'react';
 import Grid from '@mui/material/Grid';
 
+import Level from './level/level';
 import "../shared/leftPanel/leftCard/leftCard.css";
+import "./languages.css";
+
+
+
 //https://mui.com/material-ui/material-icons/?query=w&selected=WhatsApp
-const LanguageCard = () => {
+const LanguageCard = (props) => {
+    const isVisible = props.Visible;
     const styleIcon = { display: 'flex', justifyContent: 'center', alignItems: 'center', width: '..', height: '..' };
     return (
-        <div className="left-card">
+        <div className="left-card" id='language-card' style={isVisible ? { display: 'block' } : { display: 'none' }}>
             <Grid container spacing={1} >
                 <Grid item xs={12}>
                     <h1>Idiomas</h1><hr />
@@ -17,15 +23,18 @@ const LanguageCard = () => {
                 <Grid item xs={8}>
                     Nativo
                 </Grid>
-                <Grid item xs={4} style={styleIcon}>
-                   Inglés
+                <Grid item xs={12}>
+                    <hr />
                 </Grid>
-                <Grid item xs={8}>
-                    Listening: B1+<br/>
-                    Writing: B2+<br/>
-                    Speaking: B2<br/>
-                    Reading: B2+<br/>
-                </Grid>              
+                <Grid item xs={4} style={styleIcon}>
+                    Inglés
+                </Grid>
+                <Grid item xs={8} >
+                    <Level Value='3.5' Label='Listening' />
+                    <Level Value='4.5' Label='Writing' />
+                    <Level Value='3.5' Label='Speaking' />
+                    <Level Value='4' Label='Reading' />
+                </Grid>
             </Grid>
         </div>
     );

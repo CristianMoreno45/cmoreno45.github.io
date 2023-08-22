@@ -6,11 +6,13 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import "../shared/leftPanel/leftCard/leftCard.css";
+import "./contactCard.css";
 //https://mui.com/material-ui/material-icons/?query=w&selected=WhatsApp
-const ContactCard = () => {
+const ContactCard = (props) => {
+    const isVisible = props.Visible;
     const styleIcon = { display: 'flex', justifyContent: 'center', alignItems: 'center', width: '..', height: '..' };
     return (
-        <div className="left-card">
+        <div className="left-card" id='contact-card' style={isVisible ? { display: 'block' } : { display: 'none' }}>
             <Grid container spacing={1} >
                 <Grid item xs={12}>
                     <h1>Contacto</h1><hr />
@@ -19,7 +21,7 @@ const ContactCard = () => {
                     <LinkedInIcon />
                 </Grid>
                 <Grid item xs={10}>
-                    <a href='https://www.linkedin.com/in/cristian-camilo-moreno-bayona-70b67aa4/'> Linkedin</a>
+                    <a href='https://www.linkedin.com/in/cristian-camilo-moreno-bayona-70b67aa4/'> CRISTIAN CAMILO MORENO BAYONA</a>
                 </Grid>
                 <Grid item xs={2} style={styleIcon}>
                     <AttachEmailIcon />

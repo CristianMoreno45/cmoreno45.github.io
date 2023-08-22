@@ -1,11 +1,13 @@
 
 import Grid from '@mui/material/Grid';
-import "../shared/leftPanel/leftCard/leftCard.css";
 import EducationItemCard from './educationItem/educationItemCard';
+import "../shared/leftPanel/leftCard/leftCard.css";
+import "./education.css";
 
-const EducationCard = () => {
+const EducationCard = (props) => {
+    const isVisible = props.Visible;
     return (
-        <div className="left-card">
+        <div className="left-card" id='education-card' style={isVisible ? { display: 'block' } : { display: 'none' }}>
             <Grid container >
                 <Grid item xs={12}>
                     <h1>Educación</h1><hr />

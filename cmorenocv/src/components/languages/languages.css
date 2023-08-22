@@ -1,0 +1,12 @@
+#language-card{
+    padding-bottom: 15px;
+}
+@media (max-width: 576px) {
+
+    /* #language-card{
+        display: none;
+    } */
+    #language-card{
+        padding-bottom: 50px;
+    }
+}

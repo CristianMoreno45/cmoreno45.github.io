@@ -11,3 +11,14 @@
 .statement {
     text-align: center;
 }
+
+
+@media (max-width: 576px) {
+    .right-panel h5{
+        margin: 0px;
+    }
+    .right-panel {
+        padding: 10px;
+    }
+
+}

@@ -15,3 +15,26 @@ h1 {
 h2 {
     color: #165a72;
 }
+#root .MuiGrid-grid-sm-3{
+    background-color: #044250;
+}
+#web{
+    display: flex;
+}
+#movile{
+    display: none;
+}
+
+@media (max-width: 576px) {
+
+    #root .MuiGrid-grid-sm-3 {
+        
+        width: 100%;
+    }
+    #web{
+        display: none;
+    }
+    #movile{
+        display: block;
+    }
+  }

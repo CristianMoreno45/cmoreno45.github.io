@@ -1,9 +1,12 @@
 
 import Grid from '@mui/material/Grid';
-import "../shared/leftPanel/leftCard/leftCard.css";
 import CertificationItem from './certificationItem/certificationItem';
+
+import "../shared/leftPanel/leftCard/leftCard.css";
+import './certificationCard.css'
 //https://mui.com/material-ui/material-icons/?query=w&selected=WhatsApp
-const CertificationCard = () => {
+const CertificationCard = (props) => {
+    const isVisible = props.Visible;
     const certificationList = [
         {
             Name: 'English B2+ Language Certificate',
@@ -88,7 +91,7 @@ const CertificationCard = () => {
         }
     ];
     return (
-        <div className="left-card">
+        <div className="left-card" id='certification-card' style={isVisible ? { display: 'inline' } : { display: 'none' }}>
             <Grid container spacing={1} >
                 <Grid item xs={12}>
                     <h2>Certificaciones</h2>

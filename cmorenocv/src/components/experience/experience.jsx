@@ -4,7 +4,9 @@ import Grid from '@mui/material/Grid';
 import ExperienceItem from './experienceItem/experienceItem';
 import './experience.css'
 
-const Experience = () => {
+const Experience = (props) => {
+    const isVisible = props.Visible;
+
     const experienceList = [
         {
             ImgUrl: 'https://media.licdn.com/dms/image/C4E0BAQEmUPg378KloQ/company-logo_200_200/0/1573663330721?e=2147483647&v=beta&t=ozpogUHagWEFCYHaywAyWkFvPu9nvklj0s7Cw1nVBug',
@@ -202,7 +204,7 @@ const Experience = () => {
         },
     ];
 
-    return <div class='experience'>
+    return <div class='experience' style={isVisible ? { display: 'inline' } : { display: 'none' }}>
         <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 6, md: 12 }}>
                 <Grid item xs={1} sm={6} md={12}>

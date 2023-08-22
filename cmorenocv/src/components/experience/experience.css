@@ -14,9 +14,11 @@
 
 
 }
-.experience .css-et1ao3-MuiTypography-root{
+
+.experience .css-et1ao3-MuiTypography-root {
     font-weight: bold;
 }
+
 .experience .css-z2eky3-MuiTypography-root {
     font-size: 14px;
 }
@@ -39,3 +41,9 @@
     padding-bottom: 5px;
 }
 
+
+@media (max-width: 576px) {
+    .experience {
+        display: none;
+    }
+}

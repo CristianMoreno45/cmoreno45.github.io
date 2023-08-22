@@ -60,7 +60,6 @@ const ExperienceItem = (props) => {
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
-
           <ExpandMore
             expand={expanded}
             onClick={handleExpandClick}
