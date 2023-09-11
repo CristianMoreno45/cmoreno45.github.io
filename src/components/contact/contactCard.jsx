@@ -7,6 +7,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import "../shared/leftPanel/leftCard/leftCard.css";
 import "./contactCard.css";
+import Qr from '../../assets/QR/frame.png';
 //https://mui.com/material-ui/material-icons/?query=w&selected=WhatsApp
 const ContactCard = (props) => {
     const isVisible = props.Visible;
@@ -16,6 +17,9 @@ const ContactCard = (props) => {
             <Grid container spacing={1} >
                 <Grid item xs={12}>
                     <h1>Contacto</h1><hr />
+                </Grid>
+                <Grid item xs={12} style={{textAlign:'center'}}>
+                    <img style ={{width:'200px', height:'200px'}}src={Qr}/>
                 </Grid>
                 <Grid item xs={2} style={styleIcon}>
                     <LinkedInIcon />
