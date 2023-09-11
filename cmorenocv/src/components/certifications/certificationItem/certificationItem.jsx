@@ -8,7 +8,7 @@ const CertificationItem = (props) => {
     const url = props.Url;
     const name = props.Name;
     const src = props.Src;
-    return <Grid item xs={2} style={styleIcon}>
+    return <Grid item xs={1} sm={3} md={3} style={styleIcon}>
         <Tooltip title={name}>
             <IconButton>
                 <a href={url} target='_blank' rel="noreferrer">

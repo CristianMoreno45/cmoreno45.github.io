@@ -1,5 +1,6 @@
 .profile {
     margin: 15px;
+    background-color: #fff;
 }
 
 .profile div h1 {
@@ -28,17 +29,14 @@
     }
 }
 
-
 @media (max-width: 576px) {
 
     .profile div h3,
     .profile div h1 {
         display: none;
     }
-
-    .profile {
-        display: none;
+    .profile .MuiBox-root {
+        padding-bottom: 0px;
     }
-
-
+    
 }

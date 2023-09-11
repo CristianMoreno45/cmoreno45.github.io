@@ -7,7 +7,7 @@ import "./education.css";
 const EducationCard = (props) => {
     const isVisible = props.Visible;
     return (
-        <div className="left-card" id='education-card' style={isVisible ? { display: 'block' } : { display: 'none' }}>
+        <div className={`left-card" fade-in-section ${isVisible ? 'is-visible' : ''}`} id='education-card' >
             <Grid container >
                 <Grid item xs={12}>
                     <h1>Educación</h1><hr />

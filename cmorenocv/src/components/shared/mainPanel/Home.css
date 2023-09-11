@@ -15,26 +15,30 @@ h1 {
 h2 {
     color: #165a72;
 }
-#root .MuiGrid-grid-sm-3{
+
+#root .MuiGrid-grid-sm-3 {
     background-color: #044250;
 }
-#web{
-    display: flex;
-}
-#movile{
-    display: none;
-}
+
 
 @media (max-width: 576px) {
-
     #root .MuiGrid-grid-sm-3 {
-        
         width: 100%;
     }
-    #web{
-        display: none;
+    .fade-in-section {
+        opacity: 0;
+        transform: translateY(20vh);
+        visibility: hidden;
+        transition: opacity 1200ms ease-out, transform 600ms ease-out, visibility 1200ms ease-out;
+        will-change: opacity, transform, visibility;
+        height: 0px;
     }
-    #movile{
-        display: block;
+    
+    .fade-in-section.is-visible {
+        opacity: 1;
+        transform: none;
+        visibility: visible;
+        height:100%
     }
-  }
+}
+

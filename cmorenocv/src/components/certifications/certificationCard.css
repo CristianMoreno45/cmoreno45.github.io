@@ -1,5 +1,6 @@
+#certification-card .MuiGrid-grid-sm-3{
+    background-color: #FFF !important;
+}
 @media (max-width: 576px) {
-    #certification-card {
-        display: none;
-    }
+
 }

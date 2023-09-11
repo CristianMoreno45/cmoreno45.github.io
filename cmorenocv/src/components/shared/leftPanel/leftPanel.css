@@ -22,7 +22,7 @@
     border-radius: 50%;
     border: #FFF solid 1px;
     margin: 0 auto;
-    background-image: url("https://media.licdn.com/dms/image/C4E03AQGqKoa1xlBL_w/profile-displayphoto-shrink_200_200/0/1642601424452?e=1697673600&v=beta&t=df29zCqUncTUgzaQ_GfXgV8drt6kGUnjGCClR2z9l_0");
+    background: url("../../../assets/leftPanel/avatar.jfif");
     background-size: 150px;
     box-shadow: 5px 5px 15px gray;
 }

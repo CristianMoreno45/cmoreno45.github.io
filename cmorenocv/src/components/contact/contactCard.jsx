@@ -12,7 +12,7 @@ const ContactCard = (props) => {
     const isVisible = props.Visible;
     const styleIcon = { display: 'flex', justifyContent: 'center', alignItems: 'center', width: '..', height: '..' };
     return (
-        <div className="left-card" id='contact-card' style={isVisible ? { display: 'block' } : { display: 'none' }}>
+        <div  className={`left-card" fade-in-section ${isVisible ? 'is-visible' : ''}`} id='contact-card' >
             <Grid container spacing={1} >
                 <Grid item xs={12}>
                     <h1>Contacto</h1><hr />

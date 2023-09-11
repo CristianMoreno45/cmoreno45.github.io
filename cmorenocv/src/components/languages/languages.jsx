@@ -12,7 +12,7 @@ const LanguageCard = (props) => {
     const isVisible = props.Visible;
     const styleIcon = { display: 'flex', justifyContent: 'center', alignItems: 'center', width: '..', height: '..' };
     return (
-        <div className="left-card" id='language-card' style={isVisible ? { display: 'block' } : { display: 'none' }}>
+        <div className={`left-card" fade-in-section ${isVisible ? 'is-visible' : ''}`} id='language-card' >
             <Grid container spacing={1} >
                 <Grid item xs={12}>
                     <h1>Idiomas</h1><hr />

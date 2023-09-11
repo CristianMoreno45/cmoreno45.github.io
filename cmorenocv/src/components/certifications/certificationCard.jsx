@@ -91,9 +91,9 @@ const CertificationCard = (props) => {
         }
     ];
     return (
-        <div className="left-card" id='certification-card' style={isVisible ? { display: 'inline' } : { display: 'none' }}>
-            <Grid container spacing={1} >
-                <Grid item xs={12}>
+        <div className={`left-card" fade-in-section ${isVisible ? 'is-visible' : ''}`} id='certification-card' >
+            <Grid container spacing={1} columns={{ xs: 3, sm: 6, md: 12 }}>
+                <Grid item xs={12} >
                     <h2>Certificaciones</h2>
                 </Grid>
                 {certificationList.map(cer => <CertificationItem Url={cer.Url} Src={cer.Src} Name={cer.Name} />)}
