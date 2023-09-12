@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cmoreno45.github.io/static/css/main.9c8be84c.css",
-    "main.js": "/cmoreno45.github.io/static/js/main.ced4d298.js",
+    "main.css": "/cmoreno45.github.io/static/css/main.3c2b485a.css",
+    "main.js": "/cmoreno45.github.io/static/js/main.6dad35a5.js",
     "static/media/compensar.jpg": "/cmoreno45.github.io/static/media/compensar.bf252aee95c352889d35.jpg",
     "static/media/atento.jpg": "/cmoreno45.github.io/static/media/atento.bd338145ad48f55a36c9.jpg",
     "static/media/avatar.jfif": "/cmoreno45.github.io/static/media/avatar.e2e187de46ffc6fad86d.jfif",
@@ -10,11 +10,11 @@
     "static/media/juju.jfif": "/cmoreno45.github.io/static/media/juju.25552108791ccbbfd155.jfif",
     "static/media/kbt.jfif": "/cmoreno45.github.io/static/media/kbt.91c3c952f80237ef0666.jfif",
     "index.html": "/cmoreno45.github.io/index.html",
-    "main.9c8be84c.css.map": "/cmoreno45.github.io/static/css/main.9c8be84c.css.map",
-    "main.ced4d298.js.map": "/cmoreno45.github.io/static/js/main.ced4d298.js.map"
+    "main.3c2b485a.css.map": "/cmoreno45.github.io/static/css/main.3c2b485a.css.map",
+    "main.6dad35a5.js.map": "/cmoreno45.github.io/static/js/main.6dad35a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c8be84c.css",
-    "static/js/main.ced4d298.js"
+    "static/css/main.3c2b485a.css",
+    "static/js/main.6dad35a5.js"
   ]
 }
