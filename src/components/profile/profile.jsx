@@ -24,9 +24,6 @@ const Profile = (props) => {
                     <Grid item xs={1} sm={6} md={12}>
                         <h2>{nameModule}</h2>
                     </Grid>
-                    <Grid item xs={1} sm={6} md={12} style={{ textAlign: 'center' }}>
-                        <hr />
-                    </Grid>
                     <Grid item xs={1} sm={6} md={12} style={{ textAlign: 'justify' }}>
                         <Card sx={{ minWidth: 275 }}>
                             <CardContent>

@@ -14,9 +14,6 @@ const Experience = (props) => {
                 <Grid item xs={1} sm={6} md={12}>
                     <h1>Experiencia</h1>
                 </Grid>
-                <Grid item xs={1} sm={6} md={12} style={{ textAlign: 'center' }}>
-                    <hr />
-                </Grid>
                 {ExperienceList.map(exp => {
                     return <ExperienceItem Exp={exp} />;
                 })}

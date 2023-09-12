@@ -14,7 +14,6 @@ const CertificationCard = (props) => {
                 <Grid item xs={12} >
                     <h1>Certificaciones</h1>
                 </Grid>
-                <Grid item xs={12} ><hr /></Grid>
                 {CertificationList.map(cer => <CertificationItem Url={cer.Url} Src={cer.Src} Name={cer.Name} />)}
             </Grid>
         </div>
