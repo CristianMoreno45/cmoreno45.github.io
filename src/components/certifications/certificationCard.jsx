@@ -10,11 +10,11 @@ const CertificationCard = (props) => {
     
     return (
         <div className={`left-card" fade-in-section ${isVisible ? 'is-visible' : ''}`} id='certification-card' >
-            <Grid container spacing={1} columns={{ xs: 3, sm: 6, md: 12 }}>
+            <Grid container spacing={1} columns={{ xs: 2, sm: 6, md: 12 }}>
                 <Grid item xs={12} >
                     <h1>Certificaciones</h1>
                 </Grid>
-                {CertificationList.map(cer => <CertificationItem Url={cer.Url} Src={cer.Src} Name={cer.Name} />)}
+                {CertificationList.map(cer => <CertificationItem Url={cer.Url} Src={cer.Src} Name={cer.Name} key={cer.Name}/>)}
             </Grid>
         </div>
     );

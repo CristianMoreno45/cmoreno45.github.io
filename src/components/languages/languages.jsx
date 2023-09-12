@@ -30,10 +30,10 @@ const LanguageCard = (props) => {
                     Inglés
                 </Grid>
                 <Grid item xs={8} >
-                    <Level Value='3.5' Label='Listening' />
-                    <Level Value='4.5' Label='Writing' />
-                    <Level Value='3.5' Label='Speaking' />
-                    <Level Value='4' Label='Reading' />
+                    <Level Value={3.5} Label='Listening' />
+                    <Level Value={4.5} Label='Writing' />
+                    <Level Value={3.5} Label='Speaking' />
+                    <Level Value={4} Label='Reading' />
                 </Grid>
             </Grid>
         </div>

@@ -15,16 +15,15 @@ import Profile from '../profile/profile';
 const MobileMenu = (props) => {
     const currentModule = props.CurrentModule;
     const menu = [
-        { icon: <PermContactCalendarIcon fontSize="large" onClick={() => props.ModuleHook('Perfil')} />, text: 'Perfil' },
-        { icon: <BusinessCenterIcon fontSize="large" onClick={() => props.ModuleHook('Experiencia')} />, text: 'Experiencia' },
-        { icon: <MilitaryTechIcon fontSize="large" onClick={() => props.ModuleHook('Certificaciones')} />, text: 'Certificaciones' },
-        { icon: <ContactMailIcon fontSize="large" onClick={() => props.ModuleHook('Contacto')} />, text: 'Contacto' },
-        { icon: <SchoolIcon fontSize="large" onClick={() => props.ModuleHook('Educación')} />, text: 'Educación' },
-        { icon: <TranslateIcon fontSize="large" onClick={() => props.ModuleHook('Idiomas')} />, text: 'Idiomas' },
+        { icon: <PermContactCalendarIcon fontSize="large" />, text: 'Perfil' },
+        { icon: <BusinessCenterIcon fontSize="large" />, text: 'Experiencia' },
+        { icon: <MilitaryTechIcon fontSize="large" />, text: 'Certificaciones' },
+        { icon: <ContactMailIcon fontSize="large" />, text: 'Contacto' },
+        { icon: <SchoolIcon fontSize="large" />, text: 'Educación' },
+        { icon: <TranslateIcon fontSize="large" />, text: 'Idiomas' },
     ];
     return <div style={props.Window.Dispositive === 'mobile' ? { display: 'inline' } : { display: 'none' }} >
         <hr />
-
         <Grid container spacing={{ xs: 0, md: 3 }} columns={{ xs: 3 }}>
             <Grid item xs={3} style={{ textAlign: 'center' }}>
                 <Box sx={{ border: '1px dashed grey', padding: '5px' }}>
@@ -35,10 +34,10 @@ const MobileMenu = (props) => {
             </Grid>
             {
                 menu.map(({ icon, text }) => (
-                    <Grid item xs={1} style={{ textAlign: 'center' }}>
-                        <Typography sx={{ fontSize: 14 }} gutterBottom>
-                            <IconButton>{icon}</IconButton>
-                            <h5 style={{ margin: '0px' }}>{text}</h5>
+                    <Grid item xs={1} style={{ textAlign: 'left' }} key={text}>
+                        <Typography component={'span'} sx={{ fontSize: 14 }} gutterBottom>
+                            <IconButton onClick={() => { props.ModuleHook(text); }}>{icon}</IconButton>
+                            <span style={{ margin: '0px' }}>{text}</span>
                         </Typography>
                     </Grid>
                 ))}

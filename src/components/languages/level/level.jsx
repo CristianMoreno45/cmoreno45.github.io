@@ -21,16 +21,13 @@ const labels = {
     6: 'C2'
 };
 
-function getLabelText(value) {
-    return `${value} Star${value !== 1 ? 's' : ''}, ${labels[value]}`;
-}
 
 const Level = (props) => {
     const label = props.Label;
     const [value, setValue] = useState(props.Value);
     const [hover, setHover] = useState(props.Value);
 
-    return <> <Typography component="legend">{label}</Typography>
+    return <> <Typography component="legend" style={{fontSize:'14px'}}  >{label}</Typography>
         <Box
             sx={{
                 width: 200,
@@ -38,13 +35,11 @@ const Level = (props) => {
                 alignItems: 'center',
             }}
         >
-
             <Rating name="listening"
                 value={value}
                 max={6}
                 readOnly
                 precision={0.5}
-                getLabelText={getLabelText}
                 onLoad={(event, newValue) => {
                     setValue(newValue);
                 }}

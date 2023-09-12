@@ -15,7 +15,7 @@ const Experience = (props) => {
                     <h1>Experiencia</h1>
                 </Grid>
                 {ExperienceList.map(exp => {
-                    return <ExperienceItem Exp={exp} />;
+                    return <ExperienceItem Exp={exp} key={exp.JobTitle}/>;
                 })}
 
             </Grid>

@@ -56,7 +56,7 @@ const ExperienceItem = (props) => {
           <Typography variant="body2" color="text.secondary">
             {time}
             <br />
-            {stackItem.map(tool => <DevIcon Tool={tool} />)}
+            {stackItem.map(tool => <DevIcon Tool={tool} key={tool} />)}
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -73,11 +73,11 @@ const ExperienceItem = (props) => {
           <CardContent>
             <Typography paragraph style={{ fontWeight: 'bold' }}>Hitos</Typography>
             <Typography paragraph>
-              <ul>{projects.map(prj => { return <li>{prj}</li> })}</ul>
+              <ul>{projects.map(prj => { return <li key={prj}>{prj}</li> })}</ul>
             </Typography>
             <Typography paragraph style={{ fontWeight: 'bold' }}>Funciones</Typography>
             <Typography paragraph>
-              <ul>{activities.map(act => { return <li>{act}</li> })}</ul>
+              <ul>{activities.map(act => { return <li key={act}>{act}</li> })}</ul>
             </Typography>
             <Typography paragraph style={{ fontWeight: 'bold' }}>El negocio</Typography>
             <Typography paragraph>
