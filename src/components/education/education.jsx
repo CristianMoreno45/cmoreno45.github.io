@@ -34,11 +34,6 @@ const EducationCard = (props) => {
                             Title='Tecnólogo en sistemas de computación'
                             Year=' (Colombia -2011)'
                         ></EducationItemCard>
-                          <EducationItemCard
-                            Institution='Institución educativa distrital Villa Amalia'
-                            Title='Bachiller académico'
-                            Year=' (Colombia -2006)'
-                        ></EducationItemCard>
                     </Grid>
                 </Grid>
             </Grid>

@@ -3,7 +3,7 @@
 }
 
 .experience h2 {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -39,6 +39,9 @@
 
 .experience .MuiCardHeader-root {
     padding-bottom: 5px;
+}
+.css-w88nxk{
+    max-width: 100%;
 }
 
 

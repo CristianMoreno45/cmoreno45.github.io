@@ -19,7 +19,7 @@ const ContactCard = (props) => {
                     <h1>Contacto</h1><hr />
                 </Grid>
                 <Grid item xs={12} style={{textAlign:'center'}}>
-                    <img style ={{width:'200px', height:'200px'}}src={Qr}/>
+                    <img style ={{width:'200px', height:'200px'}}src={Qr} alt='https://cristianmoreno45.github.io/cmoreno45.github.io/'/>
                 </Grid>
                 <Grid item xs={2} style={styleIcon}>
                     <LinkedInIcon />
@@ -46,7 +46,7 @@ const ContactCard = (props) => {
                     <WhatsAppIcon />
                 </Grid>
                 <Grid item xs={10}>
-                    (+57) 301 6370202<br />
+                    <a href='https://wa.me/+573016370202?text=Hi%2C%20I%20like%20your%20profile'>(+57) 301 6370202</a><br />
                 </Grid>
                 <Grid item xs={2} style={styleIcon}>
                     <LocationOnIcon />

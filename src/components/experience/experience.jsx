@@ -12,7 +12,10 @@ const Experience = (props) => {
         <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 6, md: 12 }}>
                 <Grid item xs={1} sm={6} md={12}>
-                    <h2>Experiencia</h2>
+                    <h1>Experiencia</h1>
+                </Grid>
+                <Grid item xs={1} sm={6} md={12} style={{ textAlign: 'center' }}>
+                    <hr />
                 </Grid>
                 {ExperienceList.map(exp => {
                     return <ExperienceItem Exp={exp} />;

@@ -25,9 +25,13 @@
         color: rgba(0, 0, 0, 0.6) !important;
     }
 
+
     .left-card div,
-    .left-card h1,
     .left-card a {
         color: rgba(0, 0, 0, 0.6) !important;
+    }
+    .left-card h1{
+        color: #165a72;
+        font-size: 20px;
     }
 }

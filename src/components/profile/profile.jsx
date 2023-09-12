@@ -20,11 +20,12 @@ const Profile = (props) => {
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 6, md: 12 }}>
                     <Title id='title-profile' />
-                    <Grid item xs={1} sm={6} md={12} style={{ textAlign: 'center' }}>
-                        <hr />
-                    </Grid>
+    
                     <Grid item xs={1} sm={6} md={12}>
                         <h2>{nameModule}</h2>
+                    </Grid>
+                    <Grid item xs={1} sm={6} md={12} style={{ textAlign: 'center' }}>
+                        <hr />
                     </Grid>
                     <Grid item xs={1} sm={6} md={12} style={{ textAlign: 'justify' }}>
                         <Card sx={{ minWidth: 275 }}>
