@@ -1,0 +1,36 @@
+.title-row {
+    width: 100%;
+    text-align: center;
+}
+
+#title h1,
+h2 {
+    margin: 0px;
+}
+
+#title h1 {
+    margin-top: 20px;
+    color: rgb(80, 232, 99);
+    font-size: 18px;
+}
+
+#title h2 {
+    margin-top: 2px;
+    font-size: 14px;
+}
+.css-jh2a71-MuiGrid-root{
+    max-width: 100% !important;
+}
+
+@media (max-width: 576px) {
+
+    #title {
+        margin: 0px;
+        font-size: 18px;
+        position: flex;
+        position: absolute;
+        margin-top: -80px;
+        margin-left: 10px;
+    }
+
+}

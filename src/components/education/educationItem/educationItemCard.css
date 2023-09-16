@@ -1,6 +1,9 @@
-.icon-education{
+.icon-education {
     padding-top: 20px;
+    color: rgb(255, 121, 170);
 }
-.education-name h3{
+
+.education-name h3 {
     margin: 10px 2px 2px 2px;
+    color: rgb(113, 233, 253);
 }

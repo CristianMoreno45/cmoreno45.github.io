@@ -1,39 +1,43 @@
 
 import Grid from '@mui/material/Grid';
 import EducationItemCard from './educationItem/educationItemCard';
-import "../shared/leftPanel/leftCard/leftCard.css";
 import "./education.css";
 
 const EducationCard = (props) => {
     const isVisible = props.Visible;
+    const EducationData = [
+        {
+            institution: 'Universidad de la Rioja',
+            title: 'MSc. en ingeniería de software y sistemas informarticos',
+            year: ' (España -2018)'
+        }, {
+            institution: 'Universidad Antonio Nariño',
+            title: 'Esp. en ingeniería de software',
+            year: ' (Colombia -2015)'
+        }, {
+            institution: 'Fundación Universitaria Compensar ',
+            title: 'Grado en ingeniería de software',
+            year: ' (Colombia -2013)'
+        }, {
+            institution: 'Fundación Universitaria Compensar ',
+            title: 'Tecnólogo en sistemas de computación',
+            year: ' (Colombia -2011)'
+        }
+    ];
+
     return (
-        <div className={`left-card" fade-in-section ${isVisible ? 'is-visible' : ''}`} id='education-card' >
+        <div className={`" fade-in-section ${isVisible ? 'is-visible' : ''}`} id='education-card' >
             <Grid container >
                 <Grid item xs={12}>
                     <h1>Educación</h1><hr />
                 </Grid>
                 <Grid item xs={12}>
                     <Grid container >
-                        <EducationItemCard
-                            Institution='Universidad de la Rioja'
-                            Title='MSc. en ingeniería de software y sistemas informarticos'
-                            Year=' (España -2018)'
-                        ></EducationItemCard>
-                        <EducationItemCard
-                            Institution='Universidad Antonio Nariño'
-                            Title='Esp. en ingeniería de software'
-                            Year=' (Colombia -2015)'
-                        ></EducationItemCard>
-                          <EducationItemCard
-                            Institution='Fundación Universitaria Compensar '
-                            Title='Grado en ingeniería de software'
-                            Year=' (Colombia -2013)'
-                        ></EducationItemCard>
-                         <EducationItemCard
-                            Institution='Fundación Universitaria Compensar '
-                            Title='Tecnólogo en sistemas de computación'
-                            Year=' (Colombia -2011)'
-                        ></EducationItemCard>
+                        {
+                            EducationData.map(edu => {
+                                return <EducationItemCard Institution={edu.institution} Title={edu.title} Year={edu.year} />
+                            })
+                        }
                     </Grid>
                 </Grid>
             </Grid>

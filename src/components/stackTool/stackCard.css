@@ -1,9 +1,9 @@
-.profile {
+.stack-card {
     margin: 15px;
 
 }
 
-.profile div h1 {
+.stack div h1 {
     margin-top: 5px;
     margin-bottom: 0px;
     color: rgb(255, 121, 170);
@@ -13,7 +13,7 @@
 @media (max-width: 576px) {
 
 
-    .profile .MuiBox-root {
+    .stack .MuiBox-root {
         padding-bottom: 0px;
     }
     

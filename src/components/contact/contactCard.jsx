@@ -1,60 +1,37 @@
 
 import Grid from '@mui/material/Grid';
-import AttachEmailIcon from '@mui/icons-material/AttachEmail';
-import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import "../shared/leftPanel/leftCard/leftCard.css";
+import ContactData from '../../data/contactData';
 import "./contactCard.css";
 import Qr from '../../assets/QR/frame.png';
 //https://mui.com/material-ui/material-icons/?query=w&selected=WhatsApp
 const ContactCard = (props) => {
     const isVisible = props.Visible;
-    const styleIcon = { display: 'flex', justifyContent: 'center', alignItems: 'center', width: '..', height: '..' };
+
     return (
-        <div  className={`left-card" fade-in-section ${isVisible ? 'is-visible' : ''}`} id='contact-card' >
-            <Grid container spacing={1} >
+        <div className={`contact-card" fade-in-section ${isVisible ? 'is-visible' : ''}`} id='contact-card' >
+            <Grid container spacing={1} columns={{ xs: 4, sm: 6, md: 12 }}>
                 <Grid item xs={12}>
                     <h1>Contacto</h1><hr />
                 </Grid>
-                <Grid item xs={12} style={{textAlign:'center'}}>
-                    <img style ={{width:'200px', height:'200px'}}src={Qr} alt='https://cristianmoreno45.github.io/cmoreno45.github.io/'/>
+                <Grid item xs={6} sm={4} md={10}>
+                    <Grid container spacing={1} >
+                        {
+                            ContactData.map(({ icon, content }) => (<>
+                                <Grid item xs={2} sm={2} md={2} className='contact-icon' key={icon}>
+                                    {icon}
+                                </Grid>
+                                <Grid item xs={10} sm={10} md={4}>
+                                    {content}
+                                </Grid></>
+                            ))
+                        }
+                    </Grid>
                 </Grid>
-                <Grid item xs={2} style={styleIcon}>
-                    <LinkedInIcon />
-                </Grid>
-                <Grid item xs={10}>
-                    <a href='https://www.linkedin.com/in/cristian-camilo-moreno-bayona-70b67aa4/'> CRISTIAN CAMILO MORENO BAYONA</a>
-                </Grid>
-                <Grid item xs={2} style={styleIcon}>
-                    <AttachEmailIcon />
-                </Grid>
-                <Grid item xs={10}>
-                    <a href='mailto:ccamilomorenob@gmail.com'>ccamilomorenob@gmail.com</a><br />
-                    <a href='mailto:cmoreno45@uan.edu.co'>cmoreno45@uan.edu.co</a>
+                <Grid item xs={6} sm={2} md={2} style={{textAlign:'center'}}>
+                    <img className='qr-code' src={Qr} alt='https://cristianmoreno45.github.io/cmoreno45.github.io/' />
+                    <br />Este sitio
 
                 </Grid>
-                <Grid item xs={2} style={styleIcon}>
-                    <PhoneAndroidIcon />
-                </Grid>
-                <Grid item xs={10}>
-                    (+57) 301 6370202<br />
-                    (+356) 7951 3183
-                </Grid>
-                <Grid item xs={2} style={styleIcon}>
-                    <WhatsAppIcon />
-                </Grid>
-                <Grid item xs={10}>
-                    <a href='https://wa.me/+573016370202?text=Hi%2C%20I%20like%20your%20profile'>(+57) 301 6370202</a><br />
-                </Grid>
-                <Grid item xs={2} style={styleIcon}>
-                    <LocationOnIcon />
-                </Grid>
-                <Grid item xs={10}>
-                    Bogotá D.C. (Colombia)
-                </Grid>
-               
             </Grid>
         </div>
     );

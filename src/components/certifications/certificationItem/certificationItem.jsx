@@ -8,16 +8,15 @@ const CertificationItem = (props) => {
     const url = props.Url;
     const name = props.Name;
     const src = props.Src;
-    return <Grid item xs={1} sm={2} md={3} style={styleIcon}>
+    return <Grid item xs={4} sm={6} md={6} style={styleIcon}>
         <Tooltip title={name}>
             <IconButton>
                 <a href={url} target='_blank' rel="noreferrer">
                     <Avatar sx={{ width: 60, height: 60 }} src={src} aria-label={name} />
                 </a>
             </IconButton>
-            
         </Tooltip>
-        <p style={{fontSize:'xx-small'}} >{name}</p>
+        <p className='name-certification'>{name}</p>
     </Grid>;
 }
 

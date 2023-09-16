@@ -42,7 +42,6 @@ const MobileMenu = (props) => {
                     </Grid>
                 ))}
         </Grid>
-        <Profile className="left-card" Visible={props.Window.Dispositive === 'mobile' && currentModule === 'Perfil'} />
     </div>;
 }
 export default MobileMenu;

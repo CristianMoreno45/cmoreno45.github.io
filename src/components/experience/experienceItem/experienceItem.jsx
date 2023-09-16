@@ -42,7 +42,7 @@ const ExperienceItem = (props) => {
     setExpanded(!expanded);
   };
   return (
-    <Grid item xs={1} sm={6} md={6} >
+    <Grid item xs={4} sm={6} md={12} >
       <Card sx={{ maxWidth: 345 }}>
         <CardHeader
           avatar={

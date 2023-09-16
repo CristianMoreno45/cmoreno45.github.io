@@ -1,8 +1,49 @@
+#contact-card {
+    font-size: 12px;
+    color: rgb(232, 230, 227) !important;
+    margin-bottom: 20px;
+}
 
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 121, 170);
+}
+
+#contact-card a:link {
+    color: rgb(80, 232, 99);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#contact-card a:visited {
+    color: rgb(80, 232, 99);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#contact-card a:hover {
+    color: rgb(255, 121, 170);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.qr-code{
+    width: 75px;
+    height: 75px 
+}
+
+@media (max-width: 900px) {
+    .qr-code{
+        width: 140px;
+        height: 140px 
+    } 
+}
 
 @media (max-width: 576px) {
-
-    /* #contact-card{
-        display: none;
-    } */
-  }
+    .qr-code{
+        width: 200px;
+        height: 200px 
+    } 
+}

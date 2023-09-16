@@ -1,5 +1,5 @@
-.experience {
-    margin: 15px;
+.css-1xgjpwf-MuiGrid-root>.MuiGrid-item {
+    padding-top: 0px !important;
 }
 
 .experience h2 {
@@ -40,8 +40,13 @@
 .experience .MuiCardHeader-root {
     padding-bottom: 5px;
 }
-.css-w88nxk{
+
+.css-w88nxk {
     max-width: 100% !important;
 }
 
-
+@media (max-width: 900px) {
+    .css-1xgjpwf-MuiGrid-root>.MuiGrid-item {
+        padding-top: 0px;
+    }
+}

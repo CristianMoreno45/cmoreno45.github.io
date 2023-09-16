@@ -14,7 +14,7 @@ const ExperienceList = [
         Time: 'Enero 2022 - Actualmente',
         JobTitle: 'Líder de innovación',
         CompanyDescription: 'Es una compañía que ayuda a grandes empresas a administrar efectivamente sus programas de incentivos y fidelización para potenciar sus resultados. Trabajan con más de 250 clientes y más de 185.000 usuarios generando un alto impacto en los resultados con entregas inmediatas, una operación simple, reducción de carga operativa, costo eficiente y miles de opciones de redención en el catálogo de bonos virtuales más grande de Colombia.',
-        StackItem: ['csharp', 'angular', 'react', 'solidity', 'sqlserver', 'azuredevops', 'docker', 'rabbirmq', 'aws', 'jira', 'bitbucket', 'windows', 'linux', 'jmeter'],
+        StackItem: ['csharp', 'angular', 'react', 'solidity', 'sqlserver', 'azuredevops', 'docker', 'rabbitmq', 'aws', 'jira', 'bitbucket', 'windows', 'linux', 'jmeter'],
         Projects: [
             'Integración con VTEX para generación de giftcards en Blockchain en Solidity (Ethereum).',
             'Implementación de pruebas no funcionales con Jmeter y DevOps.',
@@ -76,7 +76,7 @@ const ExperienceList = [
         Time: 'Octubre 2018 - Agosto 2021',
         JobTitle: 'Líder de tecnología (CTO)',
         CompanyDescription: 'Es una compañía que ayuda a grandes empresas a administrar efectivamente sus programas de incentivos y fidelización para potenciar sus resultados. Trabajan con más de 250 clientes y más de 185.000 usuarios generando un alto impacto en los resultados con entregas inmediatas, una operación simple, reducción de carga operativa, costo eficiente y miles de opciones de redención en el catálogo de bonos virtuales más grande de Colombia.',
-        StackItem: ['csharp', 'angular', '', 'sqlserver', 'azuredevops', 'docker', 'aws', 'jira', 'bitbucket', 'windows'],
+        StackItem: ['csharp', 'angular', 'sqlserver', 'azuredevops', 'docker', 'aws', 'jira', 'bitbucket', 'windows'],
         Projects: [
             'Implementación de pruebas funcionales con Selenio.',
             'Implementación de análisis de Código estático con Sonar.',
@@ -204,4 +204,34 @@ const ExperienceList = [
     },
 ];
 
+const GetStack = () => {
+    let stackList = [];
+    let outputArray = [];
+    let others = ['visual basic .Net', 'genexus evo3', '.Net Core', 'sonar cloud', 'datadog', 'scrum', 'kanban'];
+    let count = 0;
+    let start = false;
+    ExperienceList.forEach(exp => {
+        exp.StackItem.forEach(el=> {
+             stackList.push(el); 
+         })
+    });
+
+    for (let j = 0; j < stackList.length; j++) {
+        for (let k = 0; k < outputArray.length; k++) {
+            if (stackList[j] == outputArray[k]) {
+                start = true;
+            }
+        }
+        count++;
+        if (count == 1 && start == false) {
+            outputArray.push(stackList[j]);
+        }
+        start = false;
+        count = 0;
+    }
+
+    return outputArray.concat(others);
+}
+const StackList = GetStack();
 export default ExperienceList;
+export { StackList };
