@@ -12,7 +12,7 @@ const Profile = (props) => {
     const profileValue = GetProfileData('ES', 'PROFILE');
 
     return <>
-        <div className={`profile fade-in-section ${isVisible ? 'is-visible' : ''}`}>
+        <div className={`profile fade-in-section ${isVisible ? 'is-visible' : ''}`} id='profile'>
             <Grid container spacing={1} >
                 <Grid item xs={12}>
                     <h1>Sobre mí</h1><hr />

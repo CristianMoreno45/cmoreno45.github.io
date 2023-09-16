@@ -9,7 +9,7 @@ const StackCard = (props) => {
     const isVisible = props.Visible;
 
     return <>
-        <div className={`profile fade-in-section ${isVisible ? 'is-visible' : ''}`}>
+        <div className={`stack fade-in-section ${isVisible ? 'is-visible' : ''}`} id='stack-card'>
             <Grid container spacing={1} >
                 <Grid item xs={12}>
                     <h1>Stack tecnológico</h1><hr />
