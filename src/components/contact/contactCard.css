@@ -12,13 +12,13 @@
 }
 
 #contact-card a:link {
-    color: rgb(80, 232, 99);
+    color: rgb(113, 233, 253);
     background-color: transparent;
     text-decoration: none;
 }
 
 #contact-card a:visited {
-    color: rgb(80, 232, 99);
+    color: rgb(113, 233, 253);
     background-color: transparent;
     text-decoration: none;
 }
@@ -30,8 +30,8 @@
 }
 
 .qr-code{
-    width: 75px;
-    height: 75px 
+    width: 90px;
+    height: 90px 
 }
 
 @media (max-width: 900px) {

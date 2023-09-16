@@ -13,7 +13,7 @@ const ContactCard = (props) => {
                 <Grid item xs={12}>
                     <h1>Contacto</h1><hr />
                 </Grid>
-                <Grid item xs={6} sm={4} md={10}>
+                <Grid item xs={6} sm={4} md={9}>
                     <Grid container spacing={1} >
                         {
                             ContactData.map(({ icon, content }) => (<>
@@ -27,9 +27,9 @@ const ContactCard = (props) => {
                         }
                     </Grid>
                 </Grid>
-                <Grid item xs={6} sm={2} md={2} style={{textAlign:'center'}}>
+                <Grid item xs={6} sm={2} md={3} style={{textAlign:'center'}}>
                     <img className='qr-code' src={Qr} alt='https://cristianmoreno45.github.io/cmoreno45.github.io/' />
-                    <br />Este sitio
+                    <br />Ver esto en un sitio
 
                 </Grid>
             </Grid>

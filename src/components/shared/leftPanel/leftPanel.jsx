@@ -16,12 +16,10 @@ function LeftPanel(props) {
       <AvatarComponent />
       <Title id='title-profile' />
       <MobileMenu Window={props.Window} CurrentModule={props.CurrentModule} ModuleHook={props.ModuleHook} />
-      <div >
-        <Profile className="left-card" Visible={props.Window.Dispositive === 'mobile' && currentModule === 'Perfil'} />
-        <StackCard Visible={currentModule === 'Idiomas' || props.Window.Dispositive === 'desktop' || props.Window.Dispositive === 'tablet'} />
-        <LanguageCard Visible={currentModule === 'Idiomas' || props.Window.Dispositive === 'desktop' || props.Window.Dispositive === 'tablet'} />
-        
-      </div>
+      <Profile className="left-card" Visible={props.Window.Dispositive === 'mobile' && currentModule === 'Perfil'} />
+      <StackCard Visible={currentModule === 'Stack' || props.Window.Dispositive === 'desktop' || props.Window.Dispositive === 'tablet'} />
+      <LanguageCard Visible={currentModule === 'Idiomas' || props.Window.Dispositive === 'desktop' || props.Window.Dispositive === 'tablet'} />
+
     </div>
   );
 }
