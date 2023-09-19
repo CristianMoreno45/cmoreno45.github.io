@@ -1,14 +1,16 @@
-.mobile-menu{
+.mobile-menu {
     padding-bottom: 10px;
 }
+
 .icon-mobile-menu {
     color: rgb(255, 121, 170) !important;
+    padding: 5px !important;
 }
 
 .message-mobile-menu-container {
     border: 1px dashed grey;
-     padding: 5px;
-     margin: 5px;
+    padding: 5px;
+    margin: 5px;
 }
 
 .message-mobile-menu {
@@ -22,4 +24,5 @@
     margin: 0px;
     color: #e8e6e3 !important;
     cursor: pointer;
+    font-size: 12px;
 }

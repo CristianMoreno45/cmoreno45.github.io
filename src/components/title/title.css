@@ -21,7 +21,18 @@ h2 {
 .css-jh2a71-MuiGrid-root{
     max-width: 100% !important;
 }
+@media (max-width: 600) {
 
+    #title {
+        margin: 0px;
+        font-size: 18px;
+        position: flex;
+        position: absolute;
+        margin-top: -80px;
+        margin-left: 10px;
+    }
+
+}
 @media (max-width: 576px) {
 
     #title {
