@@ -3,12 +3,12 @@ const CertificationList = [
     {
         Name: 'Agile Leader Professional Certification - ALPC',
         Src: 'https://images.credly.com/size/340x340/images/d472529e-065f-4b54-95fe-944b29a4c966/image.png',
-        Url: 'https://www.credly.com/earner/earned/badge/865c895f-ce85-42a6-b84a-0a5b0829ada1'
+        Url: 'https://www.credly.com/badge/865c895f-ce85-42a6-b84a-0a5b0829ada1/public_url'
     },
     {
         Name: 'AWS Certified Cloud Practitioner',
         Src: 'https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png',
-        Url: 'https://www.credly.com/badges/1260d609-7f8a-4178-88b1-cc2a78050697?source=linked_in_profile'
+        Url: 'https://www.credly.com/badges/1260d609-7f8a-4178-88b1-cc2a78050697/public_url'
     },
     {
         Name: 'Microservicios en NET 5: Arquitectura para contenedores',
@@ -28,12 +28,12 @@ const CertificationList = [
     {
         Name: 'Remote Work Professional Certification - RWPC',
         Src: 'https://images.credly.com/size/340x340/images/ea2c9f2e-b7e1-4a5a-a82e-7e94b67b35bd/image.png',
-        Url: 'https://www.credly.com/badges/9e9dc7eb-7e58-41c8-a3fc-829cd3025003?source=linked_in_profile'
+        Url: 'https://www.credly.com/badges/9e9dc7eb-7e58-41c8-a3fc-829cd3025003/public_url'
     },
     {
         Name: 'Scrum Master Professional Certificate - SMPC',
         Src: 'https://images.credly.com/size/340x340/images/916bde6c-7eb3-40da-b698-993bdc8231f5/image.png',
-        Url: 'https://www.credly.com/badges/d0cf542c-6635-4eb0-a261-c15dd3a822dc?source=linked_in_profile'
+        Url: 'https://www.credly.com/badges/56e4954a-6ef8-4bd0-b16b-aa3953430cdf/public_url'
     },
     {
         Name: 'Management 3.0: Advanced Views Workshop',
