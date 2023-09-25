@@ -3,7 +3,7 @@ const CertificationList = [
     {
         Name: 'Agile Leader Professional Certification - ALPC',
         Src: 'https://images.credly.com/size/340x340/images/d472529e-065f-4b54-95fe-944b29a4c966/image.png',
-        Url: 'https://www.credly.com/badge/865c895f-ce85-42a6-b84a-0a5b0829ada1/public_url'
+        Url: 'https://www.credly.com/badges/865c895f-ce85-42a6-b84a-0a5b0829ada1/public_url'
     },
     {
         Name: 'AWS Certified Cloud Practitioner',
