@@ -32,6 +32,7 @@ const ExperienceItem = (props) => {
   const companyName = props.Exp.CompanyName;
   const companyDescription = props.Exp.CompanyDescription;
   const time = props.Exp.Time;
+  const summary = props.Exp.Summary;
   const jobTitle = props.Exp.JobTitle;
   const stackItem = props.Exp.StackItem;
   const activities = props.Exp.Activities;
@@ -55,7 +56,9 @@ const ExperienceItem = (props) => {
         <CardContent>
           <Typography variant="body2" color="text.secondary">
             {time}
-            <br />
+            <Typography paragraph style={{ fontWeight: 'bold', margin:'2px' }}>Resumen</Typography>
+            {summary}
+            <Typography paragraph style={{ fontWeight: 'bold', margin:'2px'}}>Stack</Typography>
             {stackItem.map(tool => <DevIcon Tool={tool} key={tool} />)}
           </Typography>
         </CardContent>

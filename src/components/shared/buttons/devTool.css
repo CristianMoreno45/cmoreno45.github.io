@@ -1,0 +1,8 @@
+.dev-icon-container {
+  display: flex;
+  flex-direction: column;
+}
+.dev-icon-label {
+  font-size: 12px;
+  margin: 2px;
+}

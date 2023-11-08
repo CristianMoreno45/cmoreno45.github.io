@@ -13,6 +13,7 @@ const ExperienceList = [
         CompanyName: 'Juju S.A.S',
         Time: 'Enero 2022 - Actualmente',
         JobTitle: 'Líder de innovación',
+        Summary:'Responsable de la gestión técnica y estratégica de la compañía en materia de innovación, del liderazgo y desarrollo de 4 lideres técnicos y 3 celulas (18 personas), de la optimización y mejoramiento continuo de la infraestructura y del aseguramiento de calidad y evaluación de proyectos de tecnología.',
         CompanyDescription: 'Es una compañía que ayuda a grandes empresas a administrar efectivamente sus programas de incentivos y fidelización para potenciar sus resultados. Trabajan con más de 250 clientes y más de 185.000 usuarios generando un alto impacto en los resultados con entregas inmediatas, una operación simple, reducción de carga operativa, costo eficiente y miles de opciones de redención en el catálogo de bonos virtuales más grande de Colombia.',
         StackItem: ['csharp', 'angular', 'react', 'solidity', 'sqlserver', 'azuredevops', 'docker', 'rabbitmq', 'aws', 'jira', 'bitbucket', 'windows', 'linux', 'jmeter'],
         Projects: [
@@ -51,6 +52,7 @@ const ExperienceList = [
         CompanyName: 'Periferia IT Group S.A.S',
         Time: 'Agosto 2021 - Enero 2022',
         JobTitle: 'Consultor (Arquitecto digital)',
+        Summary:'Responsable de la gestión y coordinación de equipos técnicos, del Liderazgo técnico y definición de estrategias tecnológicas, del desarrollo de habilidades y colaboración de los 40 miembros del equipo y de la facilitación del conocimiento y experimentación de nuevas tecnologías.Responsable de la gestión técnica y estratégica de la compañía en materia de innovación, del liderazgo y desarrollo de lideres técnicos, de la optimización y mejoramiento continuo de la infraestructura y del aseguramiento de calidad y evaluación de proyectos de tecnología.',
         CompanyDescription: 'Es una compañía integral de soluciones tecnológicas, con presencia y trayectoria a nivel mundial, brindando cobertura, respaldo y que potencian las capacidades de las empresas para llevarlas a la transformación digital consiguiendo objetivos en sus proyectos.',
         StackItem: ['java', 'react', 'jenkins', 'redhat', 'gpc', 'gitlab', 'azuredevops', 'apple', 'linux', 'jmeter'],
         Projects: [
@@ -75,6 +77,7 @@ const ExperienceList = [
         CompanyName: 'Juju S.A.S',
         Time: 'Octubre 2018 - Agosto 2021',
         JobTitle: 'Líder de tecnología (CTO)',
+        Summary:"Responsable de la gestión estratégica y toma de decisiones a nivel compañía de carácter tecnológico, de la coordinación y desarrollo del equipo de Desarrollo, QA, DevOps y Soporte (12 personas), de la arquitectura tecnológica y de la optimización de los sistemas y soporte técnico de las mismas.",
         CompanyDescription: 'Es una compañía que ayuda a grandes empresas a administrar efectivamente sus programas de incentivos y fidelización para potenciar sus resultados. Trabajan con más de 250 clientes y más de 185.000 usuarios generando un alto impacto en los resultados con entregas inmediatas, una operación simple, reducción de carga operativa, costo eficiente y miles de opciones de redención en el catálogo de bonos virtuales más grande de Colombia.',
         StackItem: ['csharp', 'angular', 'sqlserver', 'azuredevops', 'docker', 'aws', 'jira', 'bitbucket', 'windows'],
         Projects: [
@@ -110,6 +113,7 @@ const ExperienceList = [
         CompanyName: 'Q-Vision Technologies S.A',
         Time: 'Octubre 2017 - Octubre 2018',
         JobTitle: 'Líder técnico',
+        Summary:'Responsable de la coordinación y co-diseño de arquitecturas de software y de la orientación y Facilitación del desarrollo (5 personas).',
         CompanyDescription: 'Es una empresa española que ofrece soluciones digitales adaptables de alta calidad, a través de 18 años en el mercado, atendiendo distintos sectores de la economía en España y Europa, así como en Latinoamérica y Estados Unidos. Cuenta con la experiencia e innovación de más de 550 colaboradores, de la mano de quienes han construido una trayectoria exitosa, llevando a nuestros clientes a la 4ta revolución industrial a través de desarrollo de software, aseguramiento de calidad, automatización de procesos y gestión inteligente de datos. Además, cuentan con certificados como: ofreciendo soluciones digitales adaptables de alta calidad en Latinoamérica, Estados Unidos y Europa.',
         StackItem: ['csharp', 'vue', 'sqlserver', 'gitlab', 'docker', 'azurecloud', 'bitbucket', 'linux'],
         Projects: [
@@ -128,6 +132,7 @@ const ExperienceList = [
         CompanyName: 'KBT S.A.S',
         Time: 'Diciembre 2016  - Octubre 2017',
         JobTitle: 'Ingeniero de desarrollo senior',
+        Summary:'Responsable de desarrollo y diseño de funcionalidades de la plataforma, del soporte técnico y documentación de esta y la integración de las funcionalidades con la arquitectura de datos ay prestablecida.',
         CompanyDescription: 'Es una empresa que se ha destacado como líder en el sector de tecnologías de la información y comunicaciones, tambien son líderes en interventorías, gestión de proyectos, servicios TIC y marketing digital.',
         StackItem: ['csharp', 'sqlserver', 'subversion', 'windows'],
         Projects: [
@@ -145,6 +150,7 @@ const ExperienceList = [
         CompanyName: 'Bancamia S.A.',
         Time: 'Julio 2013  - Diciembre 2016',
         JobTitle: 'Ingeniero de desarrollo',
+        Summary:'Responsable del diseño y desarrollo tecnológico del área de SARLAFT, de la documentación, minería y administración de datos en materia LAFT y de la gestión de incidentes y reportes regulatorios.',
         CompanyDescription: 'Es una institución financiera de primer nivel que tiene un sentido social que busca apoyar el desarrollo productivo de los emprendedores en la base de la pirámide.',
         StackItem: ['csharp', 'php', 'java', 'mysql', 'sqlserver', 'oracle', 'windows'],
         Projects: [
@@ -169,6 +175,7 @@ const ExperienceList = [
         CompanyName: 'Atento S.A.',
         Time: 'Agosto 2012  - Julio 2013',
         JobTitle: 'Ingeniero de desarrollo Jr.',
+        Summary:'Responable de desarrollar software para telecomunicaciones y Contact Center en .Net 2008, gestionar bases de datos en Sql Server 2008 R2, crear reportes en Reporting Services .net 3 y realizar ETLs con SQL Server Integration Services (SSIS) y .Net 3.',
         CompanyDescription: 'Atento es una empresa multinacional que opera en 14 países y tiene más de 150.000 empleados. Atento proporciona servicios de CRM y BPO a través de plataformas multicanal, incluyendo back office, SAC, service desk, soporte técnico, recobro y ventas.',
         StackItem: ['csharp', 'sqlserver', 'windows'],
         Projects: [
@@ -184,6 +191,7 @@ const ExperienceList = [
         CompanyName: 'Compenesar S.A.',
         Time: 'Abril 2010 - Agosto 2012',
         JobTitle: 'Auxiliar técnico',
+        Summary:'Responsable del diseño y gestión de sistemas de información que permitieran la evaluación de competencias, de la gestión y análisis de información de dicho sistema, del soporte logístico y control operativo de los diferentes eventos de RRHH y de soportar la evaluación de personal.',
         CompanyDescription: 'Compensar es un fondo de compensación familiar colombiano, con sede en Bogotá, ofrece servicios de salud a través de su Entidad de Promoción de la Salud (EPS), así como turismo, vivienda, recreación y formación deportiva a través de sus academias de fútbol y natación, baloncesto y tenis.',
         StackItem: ['php', 'mysql', 'windows'],
         Projects: [
