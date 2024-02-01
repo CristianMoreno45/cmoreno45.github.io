@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
-
+import { FormattedMessage} from 'react-intl'
 import StarIcon from '@mui/icons-material/Star';
 import Box from '@mui/material/Box';
 
@@ -23,11 +23,14 @@ const labels = {
 
 
 const Level = (props) => {
-    const label = props.Label;
+    const labelId = props.LabelId;
     const [value, setValue] = useState(props.Value);
     const [hover, setHover] = useState(props.Value);
 
-    return <> <Typography component="legend" style={{fontSize:'14px'}}  >{label}</Typography>
+    return <> <Typography component="legend" style={{fontSize:'14px'}}  > <FormattedMessage 
+    id={labelId}
+    defaultMessage={labelId}
+/></Typography>
         <Box
             sx={{
                 width: 200,
