@@ -1,28 +1,31 @@
 .mobile-menu {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .icon-mobile-menu {
-    color: rgb(255, 121, 170) !important;
-    padding: 5px !important;
+  color: rgb(255, 121, 170) !important;
+  padding: 5px !important;
 }
 
 .message-mobile-menu-container {
-    border: 1px dashed grey;
-    padding: 5px;
-    margin: 5px;
+  border: 1px dashed grey;
+  padding: 5px;
+  margin: 5px;
 }
 
 .message-mobile-menu {
-    color: rgb(80, 232, 99);
-    margin: 0px;
-    font-style: italic;
+  color: rgb(217, 232, 80);
+  margin: 0px;
+  font-style: italic;
 }
 
-
 .text-mobile-menu {
-    margin: 0px;
-    color: #e8e6e3 !important;
-    cursor: pointer;
-    font-size: 12px;
+  margin: 0px;
+  color: #e8e6e3 !important;
+  cursor: pointer;
+  font-size: 12px;
+}
+.main-box
+{
+  margin-top: 30px;  
 }

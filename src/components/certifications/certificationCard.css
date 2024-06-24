@@ -4,7 +4,7 @@
 }
 
 #certification-card .name-certification{
-    font-size: xx-small;
+    font-size: 12px;
 }
 @media (max-width: 900px) {
     #certification-card .name-certification{

@@ -1,47 +1,73 @@
 .title-row {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 #title h1,
 h2 {
-    margin: 0px;
+  margin: 0px;
 }
 
 #title h1 {
-    margin-top: 20px;
-    color: rgb(80, 232, 99);
-    font-size: 18px;
+  margin-top: 20px;
+  color: rgb(80, 232, 99);
+  font-size: 18px;
 }
 
 #title h2 {
-    margin-top: 2px;
-    font-size: 14px;
+  margin-top: 2px;
+  font-size: 14px;
 }
-.css-jh2a71-MuiGrid-root{
-    max-width: 100% !important;
+.css-jh2a71-MuiGrid-root {
+  max-width: 100% !important;
 }
+
+.flag {
+  width: 30px;
+  height: 20px;
+  border-radius: 1px;
+  border: #fff solid 1px;
+  margin: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.flag-es-la {
+  background: url("../../assets/flags/es-LA.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.flag-en-us {
+  background: url("../../assets/flags/en-US.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 @media (max-width: 600) {
+  #title {
+    margin: 0px;
+    font-size: 18px;
+    position: flex;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 10px;
+  }
 
-    #title {
-        margin: 0px;
-        font-size: 18px;
-        position: flex;
-        position: absolute;
-        margin-top: -80px;
-        margin-left: 10px;
-    }
-
+  .flag {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 576px) {
-
-    #title {
-        margin: 0px;
-        font-size: 18px;
-        position: flex;
-        position: absolute;
-        margin-top: -80px;
-        margin-left: 10px;
-    }
-
+  #title {
+    margin: 0px;
+    font-size: 18px;
+    position: flex;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 10px;
+  }
+  .flag {
+    margin-top: 20px;
+  }
 }
