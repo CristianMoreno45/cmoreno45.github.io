@@ -54,7 +54,12 @@ const MobileMenu = (props) => {
       className="mobile-menu"
     >
       <hr />
-      <Grid container spacing={{ xs: 0, md: 3 }} columns={{ xs: 3 }} className="main-box">
+      <Grid
+        container
+        spacing={{ xs: 0, md: 3 }}
+        columns={{ xs: 3 }}
+        className="main-box"
+      >
         <Grid item xs={3} style={{ textAlign: "center" }}>
           <Box className="message-mobile-menu-container">
             <h2 className="message-mobile-menu">

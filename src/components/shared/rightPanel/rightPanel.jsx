@@ -6,6 +6,8 @@ import ContactCard from "../../contact/contactCard";
 
 import Grid from "@mui/material/Grid";
 import EducationCard from "../../education/education";
+import MobileMenuData from "../../../data/mobileMenuData";
+
 const RightPanel = (props) => {
   const currentModule = props.CurrentModule;
   const lang = props.Lang;
@@ -15,7 +17,7 @@ const RightPanel = (props) => {
         <Grid item xs={8}>
           <ContactCard
             Visible={
-              currentModule === "Contacto" ||
+              currentModule === MobileMenuData[lang].contact ||
               props.Window.Dispositive === "desktop" ||
               props.Window.Dispositive === "tablet"
             }
@@ -23,7 +25,7 @@ const RightPanel = (props) => {
           />
           <Experience
             Visible={
-              currentModule === "Experiencia" ||
+              currentModule === MobileMenuData[lang].experience ||
               props.Window.Dispositive === "desktop" ||
               props.Window.Dispositive === "tablet"
             }
@@ -33,7 +35,7 @@ const RightPanel = (props) => {
         <Grid item xs={4}>
           <EducationCard
             Visible={
-              currentModule === "Educación" ||
+              currentModule === MobileMenuData[lang].education ||
               props.Window.Dispositive === "desktop" ||
               props.Window.Dispositive === "tablet"
             }
@@ -41,7 +43,7 @@ const RightPanel = (props) => {
           />
           <CertificationCard
             Visible={
-              currentModule === "Certificaciones" ||
+              currentModule === MobileMenuData[lang].certifications ||
               props.Window.Dispositive === "desktop" ||
               props.Window.Dispositive === "tablet"
             }

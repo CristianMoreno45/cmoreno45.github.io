@@ -1,23 +1,23 @@
-#language-card{
-    font-size: 12px;
-    color: rgb(232, 230, 227) !important;
-    margin-bottom: 20px;
+#language-card {
+  font-size: 12px;
+  color: rgb(232, 230, 227) !important;
+  margin-bottom: 20px;
 }
-.language-card{
-    margin: 15px;
+.language-card {
+  margin: 15px;
 }
 .language-card div h1 {
-    margin-top: 5px;
-    margin-bottom: 0px;
-    color: rgb(255, 121, 170);
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: rgb(255, 121, 170);
 }
 
 @media (max-width: 576px) {
-
-    /* #language-card{
-        display: none;
-    } */
-    #language-card{
-        padding-bottom: 50px;
-    }
+  #language-card {
+    padding-bottom: 50px;
+  }
+  #language-card .MuiGrid-root {
+    margin: 5px;
+    width: calc(100% - 15px);
+  }
 }

@@ -4,14 +4,15 @@ import RightPanel from "../rightPanel/rightPanel";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import WindowHook from "../mainPanel/window";
+import MobileMenuData from "../../../data/mobileMenuData";
 
 import "./Home.css";
 
 function Home() {
   const window = WindowHook();
-  const [currentModule, setCurrentModule] = useState("Perfil");
+  
   const [currentLang, setCurrentLang] = useState("en-US");
-
+  const [currentModule, setCurrentModule] = useState(MobileMenuData[currentLang].profile);
   return (
     <div style={{ display: "flex", height: "100vh", minHeight: "100vh" }}>
       <Box sx={{ flexGrow: 1 }}>

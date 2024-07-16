@@ -1,25 +1,24 @@
 #stack-card,
 .css-1w6wz2d {
-    color: #e8e6e3 !important;
+  color: #e8e6e3 !important;
 }
 
 .stack-card {
-    margin: 15px;
-
+  margin: 15px;
 }
 
 .stack-card div h1 {
-    margin-top: 5px;
-    margin-bottom: 0px;
-    color: rgb(255, 121, 170);
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: rgb(255, 121, 170);
 }
 
-
 @media (max-width: 576px) {
-
-
-    .stack-card .MuiBox-root {
-        padding-bottom: 0px;
-    }
-
+  .stack-card .MuiBox-root {
+    padding-bottom: 0px;
+  }
+  #stack-card .MuiGrid-root {
+    margin: 5px;
+    width: calc(100% - 15px);
+  }
 }
